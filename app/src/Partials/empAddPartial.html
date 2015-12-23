@@ -1,0 +1,34 @@
+			<div data-ng-show="empAddCookieStatus.status==-1" >
+        		<p>	Access Denied!!</p>
+			</div>
+			<div  class="container"   data-ng-hide="empAddCookieStatus['status']==-1">
+				Emp: <input type="text" data-ng-model="nameText">  <!--ng-model adds property and value of property in scope-->{{nameText}}
+				<button class="btn btn-primary btn-xs" data-ng-click="addtodo()" >  Default Add Employees!</button>  <br><br>
+				<div ng-controller="ModalDemoCtrl">
+    				<button class="btn btn-default" ng-click="open()">Add Emp!</button>
+				</div>
+
+
+				<ul class="nav nav-pills nav-stacked">
+					<p >Total EMPS :{{list.length}} EmpSelected:{{sum}}</p>
+
+
+					<li class="well well-sm" data-ng-repeat="def in list|limitTo : Limits.setLimit:Limits.start"> <input type="checkbox" ng-model="check" ng-checked="list[$index+Limits.start]['done']"
+					 ng-true-value="1" ng-false-value="0" ng-change="count($index+Limits.start,check)" > {{def.email}}-{{def.pass}}
+
+
+
+
+					 <button data-ng-click="setDelete($index+Limits.start)" style="float: none;"  type="button" class="btn btn-danger btn-sm">delete {{$index+Limits.start}}</button>
+
+					 <button data-ng-click="setView($index+Limits.start)" style="float: none;" type="button" class="btn btn-success btn-sm">view {{$index+Limits.start}}</button>
+					 <br>  </li> <!--ng-change-->
+				</ul>
+				<span ng-repeat="n in [((list.length+(Limits.setLimit-1))/Limits.setLimit)] | makeRange"><button data-ng-click="setLimit($index)" ng-disabled="n===(Limits.start/Limits.setLimit)" type="button" class="btn btn-info ">{{n+1}}</button>  </span>
+
+			</div>
+
+
+
+
+			

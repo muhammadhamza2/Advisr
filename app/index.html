@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="EmpApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="EmpApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="EmpApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="EmpApp" class="no-js"> <!--<![endif]-->
+<head>
+
+  <style type="text/css">
+    kbd {
+      font-size: 110% !important;
+    }
+
+
+     header, main, footer {
+       padding-left: 240px;
+     }
+
+    @media only screen and (max-width : 992px) {
+      header, main, footer {
+        padding-left: 0;
+      }
+    }
+
+  </style>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Advisr</title>
+  <meta name="description" content="">
+
+
+  <!--Import Google Icon Font-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="materialize/css/materialize.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="app.css">
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+<!-- Compiled and minified JavaScript -->
+<script type="text/javascript" src="materialize/jquery-2.1.1.min.js"></script>
+<script src="materialize/js/materialize.min.js"></script>
+
+
+
+  <div ui-view></div>
+
+
+
+ <!-- <div>Angular seed app: v<span app-version></span></div>-->
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+
+  <!--<link href="../app/styles/css/bootstrap.min.css" rel="stylesheet" />-->
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="bower_components/restangular/dist/restangular.js"></script>
+
+  <script src="app.js"></script>
+  <script src="datastore/dataService.js"></script>
+  <script src="src/js/Controller.js"></script>
+  <script src="src/js/config.js"></script>
+  <script src="src/js/filter.js"></script>
+
+
+  <script src="components/version/version.js"></script>
+  <script src="components/version/version-directive.js"></script>
+  <script src="components/version/interpolate-filter.js"></script>
+</body>
+</html>

@@ -1,0 +1,249 @@
+
+
+ 		<!--		<div class="container" >
+ 					<div class="jumbotron" >
+						<H3> This is empApp  </H3><!--{{NavCookieStatus}}{{CookieStatus.status}}-->
+		<!--			</div>
+				</div>
+
+				<nav class="list-inline" >
+					<p  data-ng-hide="NavCookieStatus==-1" align="center">
+						<span>	<a ui-sref="home"><kbd>Home</kbd>   </a>	</span>
+						<span >	<a ui-sref="AddEmp" > <kbd>Add Employ</kbd>  </a>	</span>
+				
+				 		<a href="#" class="btn btn-danger btn-xs" data-ng-click="LogoutFunc()"> <span class="glyphicon glyphicon-off"></span>  Log Out</a>	
+
+						<!--ui-sref="LogOut"-->
+		<!--			</p>
+
+					<p  data-ng-show="NavCookieStatus==-1" align="center"> 	<a  ui-sref="LogOut"><kbd>LogIn</kbd></a>	</p>
+				</nav>	
+			
+			
+		-->
+
+
+	<nav>
+		<div class="nav-wrapper row #2196f3 blue">
+		<!--	<ul id="slide-out" class="side-nav ">
+				<li><a href="#!">Market</a></li>
+				<li><a href="#!">Industries</a></li>
+				<li><a href="#!">Commodities</a></li>
+				<li><a href="#!">Report</a></li>
+			</ul>
+-->
+
+
+			<ul id="slide-out" class="side-nav">
+				<!--	<li><a href="#!">Market</a></li>-->
+
+				<li class="no-padding">
+					<ul class="collapsible collapsible-accordion">
+						<li>
+							<a class="collapsible-header" ui-sref="Category"><i class="mdi-navigation-arrow-drop-down"></i>
+								<img  src="img/thumbs/market.png" width="20%" height="60%" style="border: 0; float: left; margin-right: 15px;padding-top: 5%" />
+								<span>Market</span></a>
+
+							<div class="collapsible-body">
+								<ul>
+									<li class="no-padding">
+										<ul class="collapsible collapsible-accordion">
+											<li >
+												<a class="collapsible-header" ui-sref="specificCategory">KSE-100<i class="mdi-navigation-arrow-drop-down"></i></a>
+												<div class="collapsible-body">
+													<ul style="padding-left:10% ">
+
+														<li><a ui-sref="specific" style="color: #000066" >K-ELECTRIC</a></li>
+														<li><a ui-sref="specific"  style="color: #000066">NATIONAL FOODS</a></li>
+										0				<li><a ui-sref="specific"   style="color: #000066">OGDC</a></li>
+														<li><a ui-sref="specific"   style="color: #000066">K-ELECTRIC</a></li>
+														<li><a href="#!"  style="color: #000066">ENGRO</a></li>
+														<li><a href="#!"  style="color: #000066">NATIONAL FOODS</a></li>
+														<li><a href="#!"  style="color: #000066">OGDC</a></li>
+														<li><a  href="#!"  style="color: #000066">K-ELECTRIC</a></li>
+														<li><a href="#!"  style="color: #000066">ENGRO</a></li>
+														<li><a href="#!"  style="color: #000066">NATIONAL FOODS</a></li>
+														<li><a href="#!"  style="color: #000066">OGDC</a></li>
+														<li><a  href="#!"  style="color: #000066">K-ELECTRIC</a></li>
+														<li><a href="#!"  style="color: #000066">ENGRO</a></li>
+														<li><a href="#!"  style="color: #000066">NATIONAL FOODS</a></li>
+														<li><a href="#!"  style="color: #000066">OGDC</a></li>
+														<li><a  href="#!"  style="color: #000066">K-ELECTRIC</a></li>
+														<li><a href="#!"  style="color: #000066">ENGRO</a></li>
+														<li><a href="#!"  style="color: #000066">NATIONAL FOODS</a></li>
+														<li><a href="#!"  style="color: #000066">OGDC</a></li>
+
+													</ul>
+												</div>
+											</li>
+										</ul>
+									</li>
+									<li><a ui-sref="specificCategory">KSE-30</a></li>
+									<li><a ui-sref="specificCategory">KMI30</a></li>
+									<li><a ui-sref="specificCategory">ALL SHARES</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</li>
+			<!--	<li><a ui-sref="Category" >Industries</a></li>
+				<li><a ui-sref="Category" >Commodities</a></li>
+				<li><a ui-sref="report" >Report</a></li>-->
+
+
+
+				<li>	<a ui-sref="Category">
+					<img  src="img/thumbs/specific.png" width="20%" height="60%" style="border: 0; float: left; margin-right: 15px;padding-top: 5%" />
+					<span>Industries</span>
+				</a> </li>
+
+				<li>	<a ui-sref="test">
+					<img  src="img/thumbs/Commodity.png" width="20%" height="60%" style="border: 0; float: left; margin-right: 15px;padding-top: 5%" />
+					<span>Commodities</span>
+				</a> </li>
+
+				<li>	<a ui-sref="report">
+					<img  src="img/thumbs/report.png" width="20%" height="60%"  style="border: 0; float: left; margin-right: 15px;padding-top: 5%" />
+					<span>Report</span>
+				</a> </li>
+
+				<li>	<a ui-sref="rick">
+					<img  src="img/thumbs/report.png" width="20%" height="60%"  style="border: 0; float: left; margin-right: 15px;padding-top: 5%" />
+					<span>Rickshaw</span>
+				</a> </li>
+
+			</ul>
+
+
+
+
+
+			<a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class=" mdi-navigation-menu"></i></a>
+
+
+			<a href="#!" class=" col s11 right brand-logo">Logo</a>
+			<ul class="right hide-on-med-and-down">
+				<li><a href="sass.html"><i class="material-icons">comment</i></a></li>
+				<li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
+				<li><a href="collapsible.html"><i class="material-icons">stars</i></a></li>
+
+			</ul>
+
+
+		</div>
+	</nav>
+
+
+
+
+	<nav>
+
+		<div class="nav-wrapper #2196f3 blue">
+
+			<form>
+				<div class="input-field">
+					<input id="search" type="search" required>
+					<label for="search"><i class="material-icons ">search</i></label>
+					<i class="material-icons">close</i>
+				</div>
+			</form>
+
+		</div>
+
+	</nav>
+
+		<nav style="background-color: slategray">
+			<div style="height: 80%; " class="nav-wrapper #e0e0e0 grey lighten-2">
+				<!-- Dropdown Trigger -->
+				<a STYLE="height: 100%;float: left" class='dropdown-button btn #757575 grey darken-1' href='#' data-activates='dropdown1' >KSE 100</a>
+
+				<!-- Dropdown Structure -->
+				<ul id='dropdown1' class='dropdown-content'>
+					<li><a href="#!">KSE-100</a></li>
+					<li><a href="#!">KSE-30</a></li>
+					<li><a href="#!">KMI-30</a></li>
+
+				</ul>
+
+			</div>
+		</nav>
+
+
+ 	<script>
+
+		// Initialize collapsible (uncomment the line below if you use the dropdown variation)
+		$('.collapsible').collapsible();
+		$('.button-collapse').sideNav({
+					menuWidth: 300, // Default is 240
+					edge: 'left', // Choose the horizontal origin
+					closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+				}
+		);
+		// Show sideNav
+		//$('.button-collapse').sideNav('show');
+		$('.dropdown-button').dropdown({
+					inDuration: 300,
+					outDuration: 225,
+					constrain_width: true, // Does not change width of dropdown to that of the activator
+					hover: true, // Activate on hover
+					gutter: 0, // Spacing from edge
+					belowOrigin: false, // Displays dropdown below the button
+					alignment: 'left' // Displays dropdown with edge aligned to the left of button
+				}
+		);
+
+	</script>
+
+
+
+
+<div class="row">
+
+				<div class="col s9" align="center" >
+    				<div ui-view></div>
+
+				</div>
+
+	<div   class="col s3" align="center">
+		<br>
+		<img src="img/twitterFeed.png" width="80%">
+		<br>
+		<img src="img/newFeed.png" width="80%">
+	</div>
+
+</div>
+
+
+
+	<footer class="page-footer #2196f3 blue">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="white-text">Footer Content</h5>
+					<p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+					<div>Angular seed app: v<span app-version></span></div>
+				</div>
+
+				<div class="col l4 offset-l2 s12">
+					<h5 class="white-text">Links</h5>
+					<ul>
+						<li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+
+			<div class="container">
+				© 2014 Copyright Text
+				<a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+			</div>
+		</div>
+	</footer>
+
+
+</div>

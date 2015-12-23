@@ -1,0 +1,18 @@
+			<div data-ng-init="LoginCookieStatus=-1" data-ng-show="LoginCookieStatus==-1">
+  	 			email:    <input type="text" ng-model="uemail"><br><br>
+  	 			
+          passw: <input type="password" ng-model="upassword"><br><br>
+         <a href="#" class="btn btn-success btn-sm" data-ng-click="Login()"
+          data-ng-model="LoginOutput">     <span class="glyphicon glyphicon-
+          ok-sign"></span> LOGIN </a>
+
+                <md-input-container flex="">
+                    <label>Name</label>
+                    <input type="text">
+                </md-input-container>
+
+  	 			<br>
+
+                <font color="red">{{LoginOutput}}</font>
+        
+			</div>
