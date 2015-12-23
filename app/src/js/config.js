@@ -44,17 +44,11 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
         .state('report', {
             url: '/report',
             templateUrl: 'src/Partials/report.html',
-            parent: 'root',
+            parent: 'root'
            // controller:'LoginController'
         })
 
-        .state('specific', {
-            url: '/specificCategory',
-            templateUrl: 'src/Partials/specific.html',
-            //controller:'routerAppController',
-            parent: 'root'
 
-        })
         .state('Category', {
             url: '/Cat',
             templateUrl: 'src/Partials/category.html',
@@ -62,13 +56,35 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
             parent: 'root'
 
         })
+        .state('specificCategory', {
+            url: '/specificCategory',
+            templateUrl: 'src/Partials/specific.html',
+            //controller:'routerAppController',
+            parent: 'root'
+
+        })
+        .state('specific', {
+            url: '/specificCategory',
+            templateUrl: 'src/Partials/specific.html',
+            //controller:'routerAppController',
+            parent: 'specificCategory'
+
+        })
+
+        .state('gold', {
+            url: '/g',
+            templateUrl: 'src/Partials/g.html',
+            //controller:'routerAppController',
+            parent: 'root'
+        })
+
         .state('test', {
             url: '/test',
             templateUrl: 'src/Partials/partials/graphpartial.html',
             //controller:'routerAppController',
             parent: 'root'
-
         })
+
         .state('rick', {
             url: '/rick',
             templateUrl: 'src/Partials/partials/rckshaw_partial.html',

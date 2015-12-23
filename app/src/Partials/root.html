@@ -46,16 +46,15 @@
 
 							<div class="collapsible-body">
 								<ul>
+
 									<li class="no-padding">
 										<ul class="collapsible collapsible-accordion">
 											<li >
 												<a class="collapsible-header" ui-sref="specificCategory">KSE-100<i class="mdi-navigation-arrow-drop-down"></i></a>
 												<div class="collapsible-body">
-													<ul style="padding-left:10% ">
-
+													<ul style="padding-left:10%" > <!---->
 														<li><a ui-sref="specific" style="color: #000066" >K-ELECTRIC</a></li>
 														<li><a ui-sref="specific"  style="color: #000066">NATIONAL FOODS</a></li>
-										0				<li><a ui-sref="specific"   style="color: #000066">OGDC</a></li>
 														<li><a ui-sref="specific"   style="color: #000066">K-ELECTRIC</a></li>
 														<li><a href="#!"  style="color: #000066">ENGRO</a></li>
 														<li><a href="#!"  style="color: #000066">NATIONAL FOODS</a></li>
@@ -78,6 +77,8 @@
 											</li>
 										</ul>
 									</li>
+
+
 									<li><a ui-sref="specificCategory">KSE-30</a></li>
 									<li><a ui-sref="specificCategory">KMI30</a></li>
 									<li><a ui-sref="specificCategory">ALL SHARES</a></li>
@@ -92,15 +93,33 @@
 
 
 
+				<li class="no-padding">
+					<ul class="collapsible collapsible-accordion">
+						<li>
+							<a class="collapsible-header" ui-sref="Category"><i class="mdi-navigation-arrow-drop-down"></i>
+								<img  src="img/thumbs/Commodity.png" width="20%" height="60%" style="border: 0; float: left; margin-right: 15px;padding-top: 5%" />
+								<span>Commodities</span></a>
+
+							<div class="collapsible-body">
+								<ul>
+									<li><a ui-sref="gold">Gold</a></li>
+									<li><a ui-sref="Silver">Silver</a></li>
+									<li><a ui-sref="Copper">Copper</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</li>
+
+
+
+
 				<li>	<a ui-sref="Category">
 					<img  src="img/thumbs/specific.png" width="20%" height="60%" style="border: 0; float: left; margin-right: 15px;padding-top: 5%" />
 					<span>Industries</span>
 				</a> </li>
 
-				<li>	<a ui-sref="test">
-					<img  src="img/thumbs/Commodity.png" width="20%" height="60%" style="border: 0; float: left; margin-right: 15px;padding-top: 5%" />
-					<span>Commodities</span>
-				</a> </li>
+
 
 				<li>	<a ui-sref="report">
 					<img  src="img/thumbs/report.png" width="20%" height="60%"  style="border: 0; float: left; margin-right: 15px;padding-top: 5%" />
@@ -206,9 +225,24 @@
 
 	<div   class="col s3" align="center">
 		<br>
-		<img src="img/twitterFeed.png" width="80%">
-		<br>
-		<img src="img/newFeed.png" width="80%">
+		<a class="twitter-timeline" href="https://twitter.com/business" data-widget-id="679607998814224384">Tweets by @business</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id))
+		{js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
+
+
+
+		<!--<img src="img/twitterFeed.png" width="80%">-->
+
+		<div style="font-size:10px; text-align:center; width:300px;">
+			<a href="http://feed.mikle.com/" target="_blank" style="color:#CCCCCC;">RSS Feed Widget</a><!--Please display the above link in your web page according to Terms of Service.-->
+		</div>
+		<!-- end feedwind code --><!--  end  feedwind code -->
+
+
+
+		<!--<img src="img/newFeed.png" width="80%">-->
 	</div>
 
 </div>
