@@ -60,23 +60,25 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
             url: '/specificCategory',
             templateUrl: 'src/Partials/specific.html',
             //controller:'routerAppController',
-            parent: 'root'
+            parent: 'Category'
 
         })
-        .state('specific', {
-            url: '/specificCategory',
-            templateUrl: 'src/Partials/specific.html',
-            //controller:'routerAppController',
-            parent: 'specificCategory'
-
-        })
-
         .state('gold', {
             url: '/g',
             templateUrl: 'src/Partials/g.html',
             //controller:'routerAppController',
             parent: 'root'
         })
+
+        .state('specific', {
+            url: '/specific',
+            templateUrl: 'src/Partials/report.html',
+            //controller:'routerAppController',
+            parent: 'specificCategory'
+
+        })
+
+
 
         .state('test', {
             url: '/test',
