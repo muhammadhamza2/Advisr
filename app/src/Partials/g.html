@@ -133,27 +133,27 @@
         <tbody>
         <tr>
             <td  align='center'>Volume</td>
-            <td  align='center'><b>".$volume."</b></td>
+            <td  align='center'><b id="volume"></b></td>
         </tr>
         <tr >
             <td>Day Range</td>
-            <td><b>".$dayRange."</b></td>
+            <td><b id="dayRange"></b></td>
         </tr>
         <tr >
             <td>open</td>
-            <td><b>".$open."</b></td>
+            <td><b id="open"></b></td>
         </tr>
         <tr>
             <td>change</td>
-            <td><b>".$change."</b></td>
+            <td><b id="change"></b></td>
         </tr>
         <tr>
             <td>Change Percentage</td>
-            <td><b>".$changePercentage."</b></td>
+            <td><b id="changePercentage"></b></td>
         </tr>
         <tr>
             <td>Price</td>
-            <td><b>".$price."</b></td>
+            <td><b id="price"></b></td>
         </tr>
 
 
@@ -181,7 +181,15 @@
 
             //var abc = data.open;
             console.log(data);
-       //    document.getElementById('tableData').innerHTML
+            var json = JSON.parse(data)
+            //console.log(json);
+            console.log(json.volume);
+            document.getElementById('volume').innerHTML=json.volume;
+           document.getElementById('dayRange').innerHTML=json.dayRange;
+            document.getElementById('open').innerHTML=json.open;
+            document.getElementById('change').innerHTML=json.change;
+            document.getElementById('changePercentage').innerHTML=json.changePercentage;
+            document.getElementById('price').innerHTML=json.price;
         },
         failure: function (error) {
             console.log("over");
