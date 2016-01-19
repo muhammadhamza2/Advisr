@@ -104,47 +104,62 @@
 
 <iframe align="left"  id="myframe" onload="var filter=function(){document.getElementsByClassName('watermark').innerHTML ='hidden';}()"
         src="https://www.goldbroker.fr/widget/live-price/XAU?currency=USD"
-        width="15%" height="90" style="border: 0; overflow:hidden;  ">
+        width="40%" height="90" style="border: 0; overflow:hidden; padding-left: 10%  ">
 
 </iframe>
-<div class="s6 offset-s4" style="padding-left: 50%; padding-right: 25%">
-<table class="striped">
+<script>
+   /* $(document).ready(function(){
+        var myIFrame = document.getElementById('#myframe');
+        var content = myIFrame.contentWindow.document.body.innerHTML;
+        content = '<font-face font-size="50px">'+content+'<font-face>';
+        myIFrame.contentWindow.document.body.innerHTML = content});
 
-    <thead>
-    <tr>
-        <th data-field="id">Name</th>
-        <th data-field="price">Value</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td  align="center">Volume</td>
-        <td  align="center">$0.87</td>
-    </tr>
-    <tr >
-        <td>Day Range</td>
-        <td>$3.76</td>
-    </tr>
-    <tr >
-        <td>open</td>
-        <td>$3.76</td>
-    </tr>
-    <tr>
-        <td>change</td>
-        <td>$3.76</td>
-    </tr>
-    <tr>
-        <td>Change Percentage</td>
-        <td>$3.76</td>
-    </tr>
-    <tr>
-        <td>Price</td>
-        <td>$3.76</td>
-    </tr>
+        $('#myframe').ready(function(){
+            $(this).contents().find('body').h
+                    .html('Hey, i`ve changed content of <body>! Yay!!!');
+        });
+    });*/
+</script>
+
+<div id="tableData" class="s6 offset-s4" style="padding-left: 50%; padding-right: 25%">
+    <table class='striped'>
+
+        <thead>
+        <tr>
+            <th data-field='id'>Name</th>
+            <th data-field='price'>Value</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td  align='center'>Volume</td>
+            <td  align='center'><b>".$volume."</b></td>
+        </tr>
+        <tr >
+            <td>Day Range</td>
+            <td><b>".$dayRange."</b></td>
+        </tr>
+        <tr >
+            <td>open</td>
+            <td><b>".$open."</b></td>
+        </tr>
+        <tr>
+            <td>change</td>
+            <td><b>".$change."</b></td>
+        </tr>
+        <tr>
+            <td>Change Percentage</td>
+            <td><b>".$changePercentage."</b></td>
+        </tr>
+        <tr>
+            <td>Price</td>
+            <td><b>".$price."</b></td>
+        </tr>
 
 
-    </tbody>
-</table>
+
+        </tbody>
+    </table>
 </div>
 
 <style>
@@ -155,18 +170,27 @@
 <div id="chartdiv" style="width:100%; height:400px; align:top"></div>
 
 
-<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
-<script>$(document).ready(function(){
+<!--<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>-->
+<script>
+    $(document).ready(function(){
+   // function ratesfunc(){
     $.ajax({
         type: "GET",
         url: "http://localhost/abc/testscrap.php",
-        success: function(data) {
+        success: function (data) {
+
+            //var abc = data.open;
             console.log(data);
-            var abc =data
-            console.log(data[1])
+       //    document.getElementById('tableData').innerHTML
+        },
+        failure: function (error) {
+            console.log("over");
+            console.log(error);
         }
     });
-});</script>
+    })
+
+</script>
 
 
 </body>
